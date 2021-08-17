@@ -1,6 +1,6 @@
 # Cocotray
 ## Screenshot
-![](src/cocotray.png)
+![](https://media.discordapp.net/attachments/612057164038799362/877281182088310844/cocotray.png)
 
 ## Installation instructions
 clone the repo and run `install.sh` as root
