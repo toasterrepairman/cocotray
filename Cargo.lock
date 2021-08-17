@@ -219,6 +219,8 @@ dependencies = [
 name = "cocotray"
 version = "0.1.0"
 dependencies = [
+ "dialog-box",
+ "fsio",
  "gtk",
  "tray-item",
 ]
@@ -265,6 +267,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "dialog-box"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "31eaa26cd5bd727727af2ecd667328a58440c1bf75eeb06b4c93d80b1cfe81bc"
+
+[[package]]
 name = "either"
 version = "1.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -297,6 +305,12 @@ name = "foreign-types-shared"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "00b0228411908ca8685dba7fc2cdd70ec9990a6e753e89b6ac91a84c40fbaf4b"
+
+[[package]]
+name = "fsio"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a50045aa8931ae01afbc5d72439e8f57f326becb8c70d07dfc816778eff3d167"
 
 [[package]]
 name = "futures"
