@@ -1,6 +1,6 @@
 use tray_item::TrayItem;
 use gtk;
-use dialog_box::{warning, question};
+use dialog_box::{warning, information, pick_number};
 use fsio::{directory, file, path};
 
 fn main() {
@@ -10,8 +10,14 @@ fn main() {
 
     tray.add_label(":smol:").unwrap();
 
-    tray.add_menu_item("Log", || {
-        println!("{}", warning("Oh No! Something happened!"));
+    tray.add_menu_item("Burgerfy Temp", || {
+        // makes Celsius into Fah
+        let normal_units = pick_number("Temp in Celsius")
+            .trim()
+            .parse::<f64>()
+            .expect("Could not convert value to number.");
+        let burger_units = normal_units * 1.8 + 32.0;
+        information(&burger_units.to_string());
     }).unwrap();
 
     tray.add_menu_item("Quit", || {
