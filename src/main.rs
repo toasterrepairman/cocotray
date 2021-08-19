@@ -11,7 +11,7 @@ fn main() {
     tray.add_label(":smol:").unwrap();
 
     tray.add_menu_item("Log", || {
-        return;
+        println!("{}", warning("Oh No! Something happened!"));
     }).unwrap();
 
     tray.add_menu_item("Quit", || {
